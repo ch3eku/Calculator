@@ -3,7 +3,7 @@ body{
     scroll-behavior: smooth;
 }
 li{
-    margin-right: 70px;
+    margin: 0 10px;
     position: relative;
 }
 .navlogo{
@@ -16,7 +16,7 @@ li{
     padding: 8px 0 !important;
 }
 .link{
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 .link::before{
     content: '';
@@ -47,7 +47,7 @@ li{
 }
 .cal{
     background: linear-gradient(130deg, rgba(125,30,148,1) 36%, rgba(63,200,228,1) 100%);
-    height: 91.5vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
