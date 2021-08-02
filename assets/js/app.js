@@ -31,9 +31,15 @@ for (let btn of btns) {
         else if (operator.includes(text)) {
             if (screen.value === '' && screen2.value != '') {
                 if (operator.includes(screen2.value.charAt(screen2.value.length - 1))) {
-                    screen2.value = screen2.value.slice(0, -1);
+                    if (text != '-') {
+                        screen2.value = screen2.value.slice(0, -1);
+                        screen2.value += text;
+                    }
+                    else
+                        screen.value += text;
                 }
-                screen2.value += text;
+                else
+                    screen2.value += text;
             }
             else if (screen.value != '' && screen2.value != '') {
                 //eval first then add operator in screen2
